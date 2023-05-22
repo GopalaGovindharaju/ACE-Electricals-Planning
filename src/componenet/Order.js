@@ -1,120 +1,88 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
 
 function Order() {
-    const [isPopupVisible, setPopupVisibility] = useState(false);
-
-    useEffect(() => {
-        setPopupVisibility(true);
-      }, []);
     
-      const closePopup = () => {
-        setPopupVisibility(false);
-      };
-
   return (
-    <div>
+    <form>
+        <div class="container-fluid">
+  <div class="m-1 row row-cols-4 border border-dark" style={{ backgroundColor: '#D9D9D9' }}>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputDate" class="text-end col-sm-6 col-form-label">Date</label>
+  <div class="col-sm-6">
+    <input type="date" class="form-control" id="inputDate" placeholder="Date" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputOrderNumber" class="text-end col-sm-6 col-form-label">Order Number</label>
+  <div class="col-sm-6">
+    <input type="number" class="form-control" id="inputOrderNumber" placeholder="Order Number" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputCustomer" class="text-end col-sm-6 col-form-label">Customer</label>
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="inputCustomer" placeholder="Customer" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputPartNumber" class="text-end col-sm-6 col-form-label">Part Number</label>
+  <div class="col-sm-6">
+    <input type="number" class="form-control" id="inputPartNumber" placeholder="Part Number" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+      
+<div class="form-group row">
+  <label for="inputPlannerName" class="text-end col-sm-6 col-form-label">Planner Name</label>
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="inputPlannerName" placeholder="Planner Name" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputDeadline" class="text-end col-sm-6 col-form-label">Deadline</label>
+  <div class="col-sm-6">
+    <input type="date" class="form-control" id="inputDeadline" placeholder="Deadline" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputBatchCntrl" class="text-end col-sm-6 col-form-label">Batch Cntrl</label>
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="inputBatchCntrl" placeholder="Batch Cntrl" />
+  </div>
+</div>
+    </div>
+    <div class="mt-1 mb-1 col-3">
+    <div class="form-group row">
+  <label for="inputQuantity" class="text-end col-sm-6 col-form-label">Quantity</label>
+  <div class="col-sm-6">
+    <input type="number" class="form-control" id="inputQuantity" placeholder="Quantity" />
+  </div>
+</div>
+    </div>
+    <dic class=""></dic><dic class=""></dic><dic class=""></dic>
+    <div className="mt-1 mb-1 col-3 align-self-end">
+  <div className="form-group row">
+    <div className="col-sm text-end">
+      <button type="submit" className="btn btn-primary btn-sm btn-block" style={{ width: '200px' }}>Submit</button>
+    </div>
+  </div>
+</div>
 
-    {isPopupVisible && (
-      <div className="popup">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <span class="p-3 bg-info bg-opacity-10 border border-info rounded w-100">
-    <div class="modal-content">
-      <div class="modal-header">
-      <div class="p-2 mb-3 mt-0 bg-primary text-white rounded w-100 bg-gradient bg-opacity-75">Order Details</div>
-        
-      </div>
-      <div class="modal-body">
-        <div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Order Number</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Customer</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Part Number</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Planner Name</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Deadline</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Batch Control#</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Quantity</span>
-  </div>
-  <div class="col-sm-9">
-    <div class="input-group mb-3">
-      <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-    </div>
-  </div>
-</div>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" onClick={closePopup} class="btn btn-primary">Submit</button>
-      </div>
-    </div></span>
-  </div>
-        </div>
-      )}
-    </div>
+</form>
   )
 }
 
