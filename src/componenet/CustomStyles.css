@@ -1,0 +1,25 @@
+.custom-text-color {
+    background-color: rgb(171, 196, 225);
+    font-family: papyrus;
+    font-weight: Bold;
+  }
+
+.custom-input-color{
+    font-family: Trebuchet MS;
+    font-weight: Bold;
+}
+
+.custom-font{
+    font-family: papyrus;
+    font-weight: bold;
+}
+
+.custom-bcolor{
+    background-color: #e9ecef;
+}
+
+.custom-btn{
+    border-radius: 3px;
+    border-color: black;
+    background-color: rgb(222, 222, 248);
+}
