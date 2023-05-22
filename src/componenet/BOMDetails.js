@@ -1,6 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from '../App';
-import {Row,Col,container} from "react-bootstrap";
 import MoreInputForm from './BOMMorespecs';
 import './CustomStyles.css';
 function Gridlay(){
@@ -18,19 +16,19 @@ function Gridlay(){
                         <div class="input-group input-group-sm custom-bcolor">    
                             <label class="col-sm-6 col-form-label custom-input-color">No of Bends</label>
                             <div class="col-sm-6">
-                                <input value="10" type="number" id="bends" class="form-control" />   
+                                <input type="number"  id="bends" class="form-control" />   
                             </div>
                         </div><br></br>
                         <div class="input-group input-group-sm custom-bcolor">    
                             <label class="col-sm-6 col-form-label custom-input-color">No of pieces</label>
                             <div class="col-sm-6">
-                                <input value="0" type="number" id="pieces" class="form-control" />   
+                                <input type="number" id="pieces" class="form-control" />   
                             </div>
                         </div><br></br>
                         <div class="input-group input-group-sm custom-bcolor">    
                             <label class="col-sm-6 col-form-label custom-input-color">Time-per-part</label>
                             <div class="col-sm-6">
-                                <input value="00:00" type="time" id="time_req" class="form-control" />   
+                                <input type="time" id="time_req" class="form-control" />   
                             </div>
                         </div><br></br>
 
@@ -56,7 +54,7 @@ function Gridlay(){
                                 <div class="input-group input-group-sm custom-bcolor">    
                                 <label class="col-sm-6 col-form-label custom-input-color">Time Required</label>
                                 <div class="col-sm-6">
-                                <input value="00:00" type="time" id="time_req" class="form-control" />   
+                                <input type="time" id="time_req" class="form-control" />   
                                 </div>
                                 </div>
                             </div>
@@ -65,7 +63,7 @@ function Gridlay(){
                                 <div class="input-group input-group-sm custom-bcolor">    
                                 <label class="col-sm-6 col-form-label custom-input-color">No of Bends</label>
                                 <div class="col-sm-6">
-                                <input value=" " type="number" id="n_bends" class="form-control" />   
+                                <input type="number" id="n_bends" class="form-control" />   
                                 </div>
                                 </div>
                              </div>
@@ -74,7 +72,7 @@ function Gridlay(){
                                 <div class="input-group input-group-sm custom-bcolor">    
                                 <label class="col-sm-6 col-form-label custom-input-color">Machine Req</label>
                                 <div class="col-sm-6">
-                                <input value=" " type="number" id="mech_req" class="form-control" />   
+                                <input type="number" id="mech_req" class="form-control" />   
                                 </div>
                                 </div>
                             </div>

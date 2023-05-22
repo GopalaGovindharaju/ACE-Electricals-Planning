@@ -1,28 +1,12 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import React from 'react';
 
-function Order() {
-    const [isPopupVisible, setPopupVisibility] = useState(false);
-
-    useEffect(() => {
-        setPopupVisibility(true);
-      }, []);
-    
-      const closePopup = () => {
-        setPopupVisibility(false);
-      };
-
+const Popup = ({ onSubmit }) => {
   return (
-    <div>
-
-    {isPopupVisible && (
-      <div className="popup">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <span class="p-3 bg-info bg-opacity-10 border border-info rounded w-100">
-    <div class="modal-content">
+    <div><center>
+      <form class="bg-info bg-opacity-10 border border-info rounded w-50" onSubmit={onSubmit}>
+        <div class="p-2">
       <div class="modal-header">
-      <div class="p-2 mb-3 mt-0 bg-primary text-white rounded w-100 bg-gradient bg-opacity-75">Order Details</div>
-        
+      <div class="p-2 mb-3 custom-text-color rounded w-100">Order Details</div>
       </div>
       <div class="modal-body">
         <div class="row">
@@ -108,14 +92,12 @@ function Order() {
       </div>
       <div class="modal-footer">
         
-        <button type="button" onClick={closePopup} class="btn btn-primary">Submit</button>
-      </div>
-    </div></span>
-  </div>
-        </div>
-      )}
+        <button type="submit" class="btn custom-text-color">Submit</button>
+      </div></div>
+      </form>
+      </center>
     </div>
-  )
-}
+  );
+};
 
-export default Order
+export default Popup;
