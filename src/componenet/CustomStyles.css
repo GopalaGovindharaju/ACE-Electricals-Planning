@@ -18,6 +18,27 @@
     background-color: rgb(226, 237, 248);
 }
 
-.container{
-    margin: 5px
+.custom-bg1-color{
+    background-color: rgb(242, 213, 198);
 }
+
+.custom-b1-color{
+    background-color: #f0e6dcaf;
+}
+
+.custom-b2-color{
+    background-color:rgba(221, 232, 234, 0.728)
+}
+
+.first-div {
+    margin-bottom: 10px;
+  }
+  
+  .second-div {
+    margin-top: 10px;
+  }
+
+  .custom-title{
+    background-color:#D9D9D9;
+    font-weight: bolder;
+  }

@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import Switch from 'react-bootstrap/Switch';
 
-const ShiftSelector = () => {
-  const [shift, setShift] = useState('day');
+const ToggleComponent = () => {
+  const [toggleValue, setToggleValue] = useState(false);
 
-  return ( 
-    <Form class="border">
-        <Form.Check
-          type="switch"
-          id="shift-switch"
-          label="Day Shift"
-          checked={shift === 'day'}
-          onChange={() => setShift(shift === 'day' ? 'night' : 'day')}
+  const handleToggleChange = () => {
+    setToggleValue((prevValue) => !prevValue);
+  };
+
+  return (
+    <div className="container mt-5">
+      <div className={`toggle ${toggleValue ? 'enabled' : 'disabled'}`}>
+        <input
+          type="checkbox"
+          checked={toggleValue}
+          onChange={handleToggleChange}
+          id="toggle-one"
         />
-    </Form>  
+        <label htmlFor="toggle-one" />
+      </div>
+    </div>
   );
 };
 
-export default ShiftSelector;
+export default ToggleComponent;
