@@ -1,22 +1,2 @@
-.custom head-color{
-    background-color: rgb(15, 39, 85);
-}
 
-.custom-heading {
-    font-family: "papyrus";
-    font-size: 24px;
-    font-weight: bold;
-    /* Add other desired styles */
-  }
-  
-  .neon-effect {
-    color: #292439;
-    text-shadow: 0 0 10px #777987, 0 0 20px #8585b1, 0 0 30px #4c4f79, 0 0 40px #5a8bd4, 0 0 70px #9f9ecd, 0 0 80px #00e3ff, 0 0 100px #00e3ff, 0 0 150px #00e3ff;
-  }  
-
-  .page-container {
-    border: 2px solid transparent;
-    padding: 20px;
-    /* Add other desired styles */
-  }
   

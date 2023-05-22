@@ -1,25 +1,23 @@
-.custom-text-color {
-    background-color: rgb(171, 196, 225);
-    font-family: papyrus;
-    font-weight: Bold;
-  }
-
-.custom-input-color{
-    font-family: Trebuchet MS;
-    font-weight: Bold;
+.custom-bg-color{
+    background-color : rgb(200, 232, 217);
 }
 
-.custom-font{
-    font-family: papyrus;
-    font-weight: bold;
+.custom-b-color{
+    background-color: rgb(236, 244, 241);
 }
 
-.custom-bcolor{
-    background-color: #e9ecef;
+.btn-custom-btn{
+    background-color:  rgb(200, 232, 217);
 }
 
-.custom-btn{
-    border-radius: 3px;
-    border-color: black;
-    background-color: rgb(222, 222, 248);
+.custom-text-color{
+    background-color: rgb(174, 193, 230);
+}
+
+.custom-effort{
+    background-color: rgb(226, 237, 248);
+}
+
+.container{
+    margin: 5px
 }
