@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './CustomStyles.css'
 function Order() {
     
   return (
     <form>
-        <div class="container-fluid">
+        <div class="container-fluid custom-font">
   <div class="m-1 row row-cols-4 border border-dark" style={{ backgroundColor: '#D9D9D9' }}>
     <div class="mt-1 mb-1 col-3">
     <div class="form-group row">
