@@ -1,10 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from '../App';
-import {Row,Col,container, ToggleButton} from "react-bootstrap";
 import MoreInputForm from './BOMMorespecs';
 import './CustomStyles.css';
-import ShiftToggle from './shiftbtn';
-import ShiftSelector from './shiftbtn';
 
 function Gridlay(){
     return(
@@ -15,26 +11,26 @@ function Gridlay(){
                     <center>
                     <div class="card-header custom-bg-color"><h3>BOM Details</h3> </div>
                     <div class="card-body custom-b-color">                        
-                        <form>
+                        <form class="needs-validation" noValidate>
 
                         <div class="input-group input-group-sm ">    
                             <label class="col-sm-6 col-form-label">No of Bends</label>
                             <div class="col-sm-6">
-                                <input placeholder='10' type="number" id="bends" class="form-control" />   
+                                <input placeholder='10' type="number" id="bends" class="form-control" required/>   
                             </div>
                         </div><br></br>
 
                         <div class="input-group input-group-sm">    
                             <label class="col-sm-6 col-form-label ">No of pieces</label>
                             <div class="col-sm-6">
-                                <input placeholder='0' type="number" id="pieces" class="form-control" />   
+                                <input placeholder='0' type="number" id="pieces" class="form-control" required/>   
                             </div>
                         </div><br></br>
 
                         <div class="input-group input-group-sm">    
                             <label class="col-sm-6 col-form-label">Time-per-part</label>
                             <div class="col-sm-6">
-                                <input placeholder='00:00' type="time" id="time_req" class="form-control" />   
+                                <input placeholder='00:00' type="time" id="time_req" class="form-control" required/>   
                             </div>
                         </div><br></br>
 
@@ -109,7 +105,7 @@ function Gridlay(){
                         <form>
                         <center>
                             <div class="input-group input-group-sm rounded first-div custom-bg1-color ">    
-                                <h4><label class="col-sm-15 col-form-label">Machine</label></h4>
+                                <h4><label class="col-sm-15 col-form-label ">Machine</label></h4>
                                 <div class="col-sm-8">
                                 <h4><center><label class="col col-form-label">Pieces</label></center> </h4>  
                                 </div>
@@ -162,13 +158,13 @@ function Gridlay(){
                         </div><br></br>
                         <center>
                         <div class="row-md">
-                            <button class="rounded bg-primary text-white border border-transparent">Submit Allocation</button>
+                        <button type="submit" className="btn btn-primary btn-sm btn-block" style={{ width: '200px' }}>Submit Allocation</button>
                         </div>
                         </center>
                         <br></br>
                         <center>
                         <div class="row-md">
-                            <button class="rounded bg-primary text-white border border-transparent">Edit Allocation</button>
+                        <button type="submit" className="btn btn-primary btn-sm btn-block" style={{ width: '200px' }}>Edit Allocation</button>
                         </div>
                         </center>
                         <br></br>
