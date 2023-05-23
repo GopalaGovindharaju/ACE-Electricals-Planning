@@ -5,7 +5,7 @@ function Order() {
       console.log("submiutted")
     }
   return (
-    <form class="needs-validation" noValidate onSubmit={handel()}>
+    <form class="needs-validation" novalidate onSubmit={handel()}>
         <div class="container-fluid">
   <div class="m-1 row row-cols-4 border border-dark" style={{ backgroundColor: '#D9D9D9' }}>
     <div class="mt-1 mb-1 col-3">

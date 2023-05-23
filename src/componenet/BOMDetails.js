@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MoreInputForm from './BOMMorespecs';
 import './CustomStyles.css';
+import {Row,Col,container} from "react-bootstrap";
+import ToggleButton  from './shiftbtn';
 
 function Gridlay(){
     return(
@@ -9,7 +11,7 @@ function Gridlay(){
                 <div class="col">
                     <div class="card p-1 border border-dark">
                     <center>
-                    <div class="card-header custom-bg-color"><h3>BOM Details</h3> </div>
+                    <div class="card-header custom-bg-color "><h3>BOM Details</h3> </div>
                     <div class="card-body custom-b-color">                        
                         <form class="needs-validation" noValidate>
 
@@ -42,15 +44,26 @@ function Gridlay(){
             </div>
 
             <div class="col-md-9 align-center">
-                <p>here shift button will come</p>    
+                
+
             <div class="col-md-18">
                 <div class="row first-div">
                     <div class="row-sm">
-                    <div style={{width:'100%'}} class="card p-1 border border-dark custom-effort  ">
-                    <center>
-                    <div class="card-header-sm custom-text-color w-60"><h3>Required Effort</h3> </div>
-                    <div class="card-body-sm custom-effort">
+                    <div style={{width:'100%'}} class="card p-1 border border-dark custom-effort ">
                     
+                    <div class="card-header-sm-2 custom-text-color w-60">
+                        <div class="row">
+                            <div class="col-md-5"><center>
+                                <h4><ToggleButton/></h4></center>
+                            </div>   
+                            <div class="col-md-5">
+                                <h4>Required Effort</h4>
+                            </div>  
+                        </div>   
+                        
+                    </div>
+                    <div class="card-body-sm custom-effort">
+                    <center>
                     <form>
                     <div class="row ">
                         <div class="col-sm">
@@ -88,9 +101,9 @@ function Gridlay(){
                                 </div>
                     </div>
                     </form>
-                        
-                    </div>
                     </center>
+                    </div>
+                    
                     </div>
                      
                         
@@ -139,6 +152,13 @@ function Gridlay(){
                                 </div>
                             </div>
 
+                            <div class="input-group input-group-sm">    
+                                <label class="col-sm-6 col-form-label">Machine-5</label>
+                                <div class="col-sm-5">
+                                <input placeholder='0' type="number" id=" " class="form-control" />   
+                                </div>
+                            </div>
+
                         </center>
                         </form>
                         </div>
@@ -159,12 +179,14 @@ function Gridlay(){
                         <center>
                         <div class="row-md">
                         <button type="submit" className="btn btn-primary btn-sm btn-block" style={{ width: '200px' }}>Submit Allocation</button>
+
                         </div>
                         </center>
                         <br></br>
                         <center>
                         <div class="row-md">
                         <button type="submit" className="btn btn-primary btn-sm btn-block" style={{ width: '200px' }}>Edit Allocation</button>
+
                         </div>
                         </center>
                         <br></br>

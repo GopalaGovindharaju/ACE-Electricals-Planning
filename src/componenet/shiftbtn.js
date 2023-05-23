@@ -1,25 +1,16 @@
-import React, { useState } from 'react';
+import { Switch } from "antd";
 
-const ToggleComponent = () => {
-  const [toggleValue, setToggleValue] = useState(false);
-
-  const handleToggleChange = () => {
-    setToggleValue((prevValue) => !prevValue);
-  };
-
-  return (
-    <div className="container mt-5">
-      <div className={`toggle ${toggleValue ? 'enabled' : 'disabled'}`}>
-        <input
-          type="checkbox"
-          checked={toggleValue}
-          onChange={handleToggleChange}
-          id="toggle-one"
-        />
-        <label htmlFor="toggle-one" />
-      </div>
+function ToggleButton() {
+  return(
+    <div>
+      <label>Shift</label>
+      <Switch 
+        defaultChedked={false}
+        checkedChildren="Day"
+        unCheckedChildren="Night"
+    />
     </div>
+    
   );
-};
-
-export default ToggleComponent;
+}
+export default ToggleButton;
